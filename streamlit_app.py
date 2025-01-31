@@ -16,4 +16,4 @@ fig = px.histogram(df,  x='Date', y='Close', title='Bitcoin Price Over Time', la
 
 # Display the plot in Streamlit
 st.plotly_chart(fig)
-)
+
