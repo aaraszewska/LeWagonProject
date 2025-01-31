@@ -11,8 +11,6 @@ st.dataframe(df.head())
 
 
 
-# Sample dataframe: Replace with your actual dataframe
-bitcoin = pd.DataFrame(df)
 
 
 # Convert 'Date' column to datetime format
