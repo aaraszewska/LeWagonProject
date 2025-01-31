@@ -13,6 +13,6 @@ df.columns = df.columns.str.strip()  # Strips any leading or trailing spaces
 
 fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
 
-st.ploty_chart(fig)
+st.plotly_chart(fig)
 
 
