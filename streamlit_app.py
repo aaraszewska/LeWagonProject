@@ -16,8 +16,8 @@ df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
 df = df.sort_values(by='Date')
 
 # Continue with your Plotly or other operations
+fig = px.line(df, x='Date', y='Close', title='Bitcoin Price Over Time')
 
-fig = px.histogram(df,  x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
 
 # Display the plot in Streamlit
 st.plotly_chart(fig)
