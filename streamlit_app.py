@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import ploty.express as px
+import plotly.express as px
+
 #requirements.txt
 st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
 
