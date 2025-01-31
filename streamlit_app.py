@@ -9,6 +9,14 @@ st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
 st.sidebar.title("Navigation")
 st.sidebar.page_link("pages/create.py", label="Create Entry", icon="➕")
 st.sidebar.page_link("pages/delete.py", label="Delete Entry", icon="🗑️")
+import streamlit as st
+
+st.title("Create Entry")
+st.write("This is the create page.")
+import streamlit as st
+
+st.title("Delete Entry")
+st.write("This is the delete page.")
 
 # Sample Data Loading (Uncomment when using real CSV)
 # df = pd.read_csv('BTC_10_YEAR.csv')
