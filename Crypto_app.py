@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="Data Manager", page_icon="✏️")
+st.set_page_config(page_title="Cryptocurrency Price Prediction Using ARIMA and Random Forest Models", page_icon="✏️")
 
 st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
 
-st.sidebar.title("Navigation")
+st.sidebar.title("Homepage")
 st.sidebar.page_link("pages/create.py", label="Create Entry", icon="➕")
 st.sidebar.page_link("pages/delete.py", label="Delete Entry", icon="🗑️")
 import streamlit as st
