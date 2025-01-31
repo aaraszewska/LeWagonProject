@@ -12,6 +12,9 @@ st.dataframe(df.head())
 
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
 
+
+
+
 # Sort by date to ensure correct time series visualization
 pd = pd.sort_values(by='Date')
 fig = px.histogram(df,  x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
