@@ -9,3 +9,6 @@ st.title("Cryptocurrency Price Prediction")
 st.write("Welcome to the Crypto Dashboard. Navigate using the sidebar.")
 
 
+
+
+st.sidebar.page_link("crypto_app/pages/home.py", label="🏠 Home")
