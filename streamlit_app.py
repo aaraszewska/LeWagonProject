@@ -4,5 +4,5 @@ import pandas as pd
 st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
 
 
-df = pd.read_csv('BTC_10_YEAR')
+df = pd.read_csv('BTC_10_YEAR.csv')
 st.dataframe(df.head())
