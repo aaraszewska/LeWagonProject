@@ -13,13 +13,13 @@ pg = st.navigation([create_page, delete_page])
 st.set_page_config(page_title="Data manager", page_icon=":material/edit:")
 pg.run()
 
-df = pd.read_csv('BTC_10_YEAR.csv')
-st.dataframe(df.head())
-df.columns = df.columns.str.strip()  # Strips any leading or trailing spaces
+#df = pd.read_csv('BTC_10_YEAR.csv')
+#st.dataframe(df.head())
+#df.columns = df.columns.str.strip()  # Strips any leading or trailing spaces
 
 
-fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
+#fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
 
-st.plotly_chart(fig)
+#st.plotly_chart(fig)
 
 
