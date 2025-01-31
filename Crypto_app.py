@@ -2,21 +2,15 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="Cryptocurrency Price Prediction Using ARIMA and Random Forest Models", page_icon="✏️")
 
-st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
+st.set_page_config(page_title="Crypto Dashboard", page_icon="💰", layout="wide")
 
-st.sidebar.title("Homepage")
-st.sidebar.page_link("pages/create.py", label="Create Entry", icon="➕")
-st.sidebar.page_link("pages/delete.py", label="Delete Entry", icon="🗑️")
-import streamlit as st
+st.sidebar.title("Navigation")
+st.sidebar.page_link("pages/home.py", label="🏠 Home")
 
-st.title("Create Entry")
-st.write("This is the create page.")
-import streamlit as st
+st.title("Cryptocurrency Price Prediction")
+st.write("Welcome to the Crypto Dashboard. Navigate using the sidebar.")
 
-st.title("Delete Entry")
-st.write("This is the delete page.")
 
 # Sample Data Loading (Uncomment when using real CSV)
 # df = pd.read_csv('BTC_10_YEAR.csv')
