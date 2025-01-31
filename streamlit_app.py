@@ -2,24 +2,20 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-#requirements.txt
+st.set_page_config(page_title="Data Manager", page_icon="✏️")
+
 st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
-import streamlit as st
 
-create_page = st.Page("create.py", title="Create entry", icon=":material/add_circle:")
-delete_page = st.Page("delete.py", title="Delete entry", icon=":material/delete:")
+st.sidebar.title("Navigation")
+st.sidebar.page_link("pages/create.py", label="Create Entry", icon="➕")
+st.sidebar.page_link("pages/delete.py", label="Delete Entry", icon="🗑️")
 
-pg = st.navigation([create_page, delete_page])
-st.set_page_config(page_title="Data manager", page_icon=":material/edit:")
-pg.run()
+# Sample Data Loading (Uncomment when using real CSV)
+# df = pd.read_csv('BTC_10_YEAR.csv')
+# df.columns = df.columns.str.strip()  # Clean column names
 
-#df = pd.read_csv('BTC_10_YEAR.csv')
-#st.dataframe(df.head())
-#df.columns = df.columns.str.strip()  # Strips any leading or trailing spaces
-
-
-#fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
-
-#st.plotly_chart(fig)
+# Example Plot
+# fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
+# st.plotly_chart(fig)
 
 
