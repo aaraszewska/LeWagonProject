@@ -8,17 +8,15 @@ st.title("Cryptocurrency Price Prediction Using ARIMA and Random Forest Models")
 
 df = pd.read_csv('BTC_10_YEAR.csv')
 st.dataframe(df.head())
-
-# Assuming 'df' is your DataFrame
 df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+df['Close'] = pd.to_numeric(df['Close'], errors='coerce')
 
-# Sort by 'Date' column and assign it back to 'df'
-df = df.sort_values(by='Date')
+# Drop rows with missing values in 'Date' or 'Close'
+df = df.dropna(subset=['Date', 'Close'])
 
-# Continue with your Plotly or other operations
-fig = px.line(df, x='Date', y='Close', title='Bitcoin Price Over Time')
+# Create the histogram plot
+fig = px.histogram(df, x='Date', y='Close', title='Bitcoin Price Over Time', labels={'Close': 'Price (USD)'})
 
-
-# Display the plot in Streamlit
-st.plotly_chart(fig)
+# Show the plot
+fig.show()
 
