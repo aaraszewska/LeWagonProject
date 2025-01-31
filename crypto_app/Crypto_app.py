@@ -7,7 +7,7 @@ st.sidebar.page_link("pages/home.py", label="🏠 Home")  # No need for "crypto_
 st.title("Cryptocurrency Dashboard")
 
 # Display an image
-st.image("sarima.png", caption="Cryptocurrency Logo", use_column_width=True)
+st.image("sarima.png", caption="Cryptocurrency Logo", use_cointerner_width=True)
 
 
 
